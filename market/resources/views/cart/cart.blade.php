@@ -1,0 +1,384 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Urban WebApp Tanzania">
+    <meta name="keywords" content="Laptop,  Urban, UrbanMegastore Megastore">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>UrbanMegastore</title>
+
+    <!-- favicons Icons -->
+    <link rel="apple-touch-icon" href="{{asset('images/logo.png')}}">
+    <link rel="icon" type="image/png" href="{{asset('images/logo.png')}}">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;900&amp;display=swap" rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}" type="text/css">
+    <link rel="stylesheet" href="{{asset('css/font-awesome.min.css')}}" type="text/css">
+    <link rel="stylesheet" href="{{asset('css/elegant-icons.css')}}" type="text/css">
+    <link rel="stylesheet" href="{{asset('css/nice-select.css')}}" type="text/css">
+    <link rel="stylesheet" href="{{asset('css/jquery-ui.min.css')}}" type="text/css">
+    <link rel="stylesheet" href="{{asset('css/owl.carousel.min.css')}}" type="text/css">
+    <link rel="stylesheet" href="{{asset('css/slicknav.min.css')}}" type="text/css">
+    <link rel="stylesheet" href="{{asset('css/style.css')}}" type="text/css">
+
+</head>
+
+<body>
+    <!-- Fixed_footer -->
+    <!-- Footer -->
+            
+    <div style="position: fixed; border-radius: 30px 30px 0 0; left: 0; bottom: 0; width: 100%; background-color: #941c1c; display: flex; justify-content: center; align-items: center; height: 55px;z-index:100;">
+    
+    <a href="{{asset('/')}}"   style="text-decoration: none; margin: 0 30px; color: #888;">
+    <i class="fa fa-home" style="position:relative;top:10px;font-size: 24px;color:white"></i>
+    <br><i style="position:relative;left:8px;font-size:10px;color:#941c1c" class="fa fa-minus"></i>
+    </a>
+
+    
+    <a href="{{route('sell.shop')}}"   style="text-decoration: none; margin: 0 30px; color: #888;">
+        <i class="fa fa-photo" style="position:relative;top:10px;font-size: 24px;color:white"></i>
+        <br><i style="position:relative;left:8px;font-size:10px;color:#941c1c" class="fa fa-minus"></i>
+        </a>
+                        
+    <a href="{{asset('login')}}" style="text-decoration: none; margin: 0 30px; color: #888;">
+        <i class="fa fa-user" style="font-size: 24px;color:white"></i>
+    </a>
+  
+    <a href="#"   style="text-decoration: none; margin: 0 30px; color: #888;">
+        <i class="fa fa-shopping-bag" style="position:relative;top:10px;font-size: 24px;color:white"><sup class="bg-dark p-1" style="border-radius:50%;"><small>10</small></sup></i>
+        <br><i style="position:relative;left:8px;font-size:10px;color:white" class="fa fa-minus"></i>
+    </a>
+
+</div>
+           
+     <!-- / Footer -->     <!-- Fixed_footer Ends-->
+    
+
+    <!-- Humberger Begin -->
+    <div style="position: fixed;z-index:10;" class="humberger__menu__overlay"></div>
+    <div class="humberger__menu__wrapper">
+        <div class="humberger__menu__logo">
+            <a href="#"><img src="images/logo.png" alt=""></a>
+        </div>
+        <div class="humberger__menu__cart">
+            <ul>
+                <li><a href="#"><i class="fa fa-heart"></i> <span>1</span></a></li>
+                <li><a href="#"><i class="fa fa-shopping-bag"></i> <span>3</span></a></li>
+            </ul>
+            <div class="header__cart__price">item: <span>10,000 tZS</span></div>
+        </div>
+        <div class="humberger__menu__widget">
+            <div class="header__top__right__language">
+                <img src="images/language.png" alt="">
+                <div>English</div>
+                <span class="arrow_carrot-down"></span>
+                <ul>
+                    <li><a href="#">Kiswahili</a></li>
+                </ul>
+            </div>
+            <div class="header__top__right__auth">
+                <a href="{{asset('login')}}"  ><i class="fa fa-user"></i> Login</a>
+            </div>
+        </div>
+                <nav class="humberger__menu__nav mobile-menu">
+            <ul>
+                <li class=""><a href="{{asset('/')}}"  >Home</a></li>
+                <li class=""><a href="{{asset('shop')}}"  >Shop</a></li>
+                <li><a href="{{asset('contacts')}}">Contact</a></li>
+            </ul>
+        </nav>
+        <div id="mobile-menu-wrap"></div>
+        <div class="header__top__right__social">
+            <a href="#"><i class="fa fa-instaram"></i></a>
+            <a href="#"><i class="fa fa-facebook"></i></a>
+        </div>
+        <div class="humberger__menu__contact">
+            <ul>
+                <li><i class="fa fa-envelope"></i> UrbanMegastore@gmail.com</li>
+                <li>Free Shipping for all Order of 100K TZS</li>
+            </ul>
+        </div>
+    </div>    <!-- Humberger End -->
+
+    <!-- Header Section Begin -->
+<header style="position: fixed;z-index:5;background:white;" class="header col-12">
+    <div class="header__top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6">
+                    <div class="header__top__left">
+                        <ul>
+                            <li><i class="fa fa-envelope"></i>UrbanMegastore@gmail.com</li>
+                            <li>Free Delivery for all Orders above 100K</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div class="header__top__right">
+                       
+                        <div class="header__top__right__language">
+                            <img src="images/language.png" alt="">
+                            <div>English</div>
+                            <span class="arrow_carrot-down"></span>
+                            <ul>
+                                <li><a href="javascript:;">Swahili</a></li>
+                            </ul>
+                        </div>
+                                                <div class="header__top__right__auth">
+                            <a href="{{asset('login')}}"  > Login/Register</a>
+                        </div>
+                                            </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="header__logo row">
+                    <div class="pt-2">
+                        <a href="javascript::void(0)">
+                            
+                            <h4 style="font-weight: bold;">Urban <span style="color:#941c1c">Megastore</span> </h4>
+                        </a>
+                    </div>
+
+                    <div>
+                        
+                    </div>
+
+                </div>
+            </div>
+
+            
+                        
+
+            <div class="col-lg-6">
+                <nav class="header__menu">
+                    <ul>
+                        <li class=""><a href="{{asset('/')}}"  >Home</a></li>
+                        <li class=""><a href="{{asset('shop')}}"  >Shop</a></li>
+
+                        <li class=""><a href="{{asset('contacts')}}"  >Contacts</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="col-lg-3">
+                <div class="header__cart">
+                    <ul>
+                        <li><a href="https://wa.me/2RTO65TX6AUTK1"><i style="color:green" class="fa fa-whatsapp"></i></a></li>
+                    </ul>
+                    <div class="header__cart__price">Phone: <span>+255 613 803 662</span></div>
+                </div>
+            </div>
+        </div>
+        <div class="humberger__open">
+            <i class="fa fa-bars"></i>
+        </div>
+    </div>
+</header>
+    <!-- Header Section End -->
+
+
+    <main wire:snapshot="{" data":[],"memo":{"id":"d5i1ovkfaonelcohfeyc","name":"frontend.client-shopping-cart","path":"cart","method":"get","children":{"lw-2803324587-0":["section","k6onch43tqilrzdiggem"]},"scripts":[],"assets":[],"errors":[],"locale":"en"},"checksum":"b114176cc6750d72ba5422ac40ddd5c20b61776e8625b84ffab8eba82228b210"}"="" wire:effects="[]" wire:id="d5i1ovKfAONelCOHfeyc">
+    <!-- Hero Section Begin -->
+ <!-- Hero Section Begin -->
+<section wire:snapshot="{" data":{"search":null},"memo":{"id":"k6onch43tqilrzdiggem","name":"includes.top-categories-live-search","path":"cart","method":"get","children":[],"scripts":[],"assets":[],"errors":[],"locale":"en"},"checksum":"0a9aff3c84642330d6ba353188d9b61335f9f2323719713189a8f8df717ef51b"}"="" wire:effects="[]" wire:id="K6ONCH43TqilRzdiGGem" class="hero hero-normal">
+    <div style="position: fixed;z-index:5; top:100px;background:white;" class="container-fluid">
+        <div class="row">
+            
+            <div class="col-lg-9">
+                <div class="hero__search">
+                    <div class="hero__search__form">
+                        <form wire:submit="searchProducts">
+                            <div class="hero__search__categories">
+                                All Categories
+                                <span class="arrow_carrot-down"></span>
+                            </div>
+                            <input type="text" placeholder="What do yo u need?" wire:model.live="search">
+                            <button type="submit" class="site-btn">SEARCH</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Hero Section End -->
+ <!-- Hero Section End -->
+
+    <!-- Shoping Cart Section Begin -->
+    <section style="position: relative;top:130px" class="shoping-cart spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="shoping__cart__table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th class="shoping__product">Products</th>
+                                    <th>Price</th>
+                                    <th>Quantity</th>
+                                    <th>Total</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach ($cartItems as $item)
+                                <tr>
+                                    <td class="shoping__cart__item">
+                                        <img src="{{ asset('storage/' . $item->product->image1) }}" alt="{{ $item->product->product_name }}">
+                                        <h5>{{ $item->product->product_name }}</h5>
+                                    </td>
+                                    <td class="shoping__cart__price">
+                                        {{ number_format($item->product->price, 2) }} TZS
+                                    </td>
+                                    <td class="shoping__cart__quantity">
+                                        <div class="quantity">
+                                            <div class="pro-qty">
+                                                <input type="number" class="quantity-input" data-price="{{ $item->product->price }}" data-id="{{ $item->id }}" value="{{ $item->quantity ?? 1 }}" min="1">
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="shoping__cart__total">
+                                        <span class="total-price">
+                                            {{ number_format($item->product->price * ($item->quantity ?? 1), 2) }} TZS
+                                        </span>
+                                    </td>
+                                    <td class="shoping__cart__item__close">
+                                        <span class="icon_close"></span>
+                                    </td>
+                                </tr>
+                                @endforeach
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="shoping__cart__btns">
+                        <a href="#" class="primary-btn cart-btn">CONTINUE SHOPPING</a>
+                        <a href="#" class="primary-btn cart-btn cart-btn-right"><span class="icon_loading"></span>
+                            Upadate Cart</a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="shoping__continue">
+                        <div class="shoping__discount">
+                            <h5>Discount Codes</h5>
+                            <form action="#">
+                                <input type="text" placeholder="Enter your coupon code">
+                                <button type="submit" class="site-btn">APPLY COUPON</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="shoping__checkout">
+                        <h5>Cart Total</h5>
+                        <ul>
+                            <li>Subtotal <span>{{ number_format($totalCost, 2) }} TZS</span></li>
+                            <li>Total <span>{{ number_format($totalCost, 2) }} TZS</span></li>
+                        </ul>
+                        <a href="#"   class="primary-btn">PROCEED TO CHECKOUT</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Shoping Cart Section End -->   
+</main>
+
+
+
+    
+    <div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalScrollableTitle">Scrollable Modal</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-light waves-effect" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary waves-effect waves-light">Save changes</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->    
+    
+    <!-- Footer Section Begin -->
+    <footer style="position: relative;top:200px;" class="footer spad">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="footer__about">
+                    <div class="footer__about__logo">
+                        <a href="javascript:;"><img src="images/logo.png" alt=""></a>
+                    </div>
+                    <ul>
+                        <li>Address: CityMall, Dar es Salaam - Tanzania</li>
+                        <li>Phone: +255659463362</li>
+                        <li>Email: UrbanMegastore@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="footer__widget">
+                    <h6>Join Our Newsletter Now</h6>
+                    <p>Get E-mail updates about our latest shop and special offers.</p>
+                    <form action="#">
+                        <input type="text" placeholder="Enter your mail">
+                        <button type="submit" class="site-btn">Subscribe</button>
+                    </form>
+                    <div class="footer__widget__social">
+                        <a href="https://facebook.com/pages/urban.megastore/" target="_blank"><i class="fa fa-facebook"></i></a>
+                        <a href="https://instagram.com/urban.megastore/" target="_blank"><i class="fa fa-instagram"></i></a>
+                        <a href="https://x.com/urban.megastore/" target="_blank"><i class="fa fa-twitter"></i></a>
+                        <a href="https://linkedin.com/company/urban.megastore/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="footer__copyright">
+                    <div class="footer__copyright__text">
+                        <p>
+
+                            Copyright ©
+                            2024 All rights reserved. By <a href="https://wa.me/255698267662" target="_blank">UrbanMegastore</a>
+                        </p>
+                    </div>
+                    <div class="footer__copyright__payment"><img src="img/payment-item.png" alt=""></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+    <!-- Footer Section End -->
+
+    <!-- Js Plugins -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <script src="js/pwa.js"></script>
+
+
+<script src="js/livewire.min.js" data-csrf="71d2Q43BV2kOdzt651Jvpn0I0d2un78irPO8TfNL" data-update-uri="/livewire/update" data-navigate-once="true"></script>
+
+
+</body></html>
